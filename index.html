@@ -4,39 +4,140 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>La salud mental</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>importancia de la salud mental</h1>
-<p>La salud mental es un estado de bienestar que permite a las personas reconocer sus capacidades, afrontar los desafíos de la vida, aprender, trabajar y relacionarse con los demás.
 
-No significa sentirse bien todo el tiempo. Todas las personas pueden experimentar emociones como tristeza, enojo, miedo, preocupación o estrés. Lo importante es poder reconocer estas emociones y contar con herramientas y apoyo para atravesarlas.</p>
-<p>La salud mental es una parte fundamental de nuestro bienestar. Se relaciona con la manera en que pensamos, sentimos y actuamos, así como con nuestra capacidad para afrontar las dificultades, relacionarnos con otras personas y desarrollar nuestras actividades cotidianas.</p>
-<h1>Salud mental en adolescentes</h1>
-  <p>La adolescencia es una etapa de muchos cambios físicos, emocionales y sociales. Los estudios, las relaciones con amigos y familiares, las redes sociales y las expectativas sobre el futuro pueden generar diferentes emociones y preocupaciones.
+<header class="hero">
+  <div class="hero__inner">
+    <p class="hero__kicker">Una guía breve</p>
+    <h1 class="hero__title">La salud mental no es un lujo, es una base.</h1>
+    <p class="hero__subtitle">Cómo entenderla, cómo cuidarla y cómo acompañar a los demás — en español y en italiano.</p>
+  </div>
+</header>
 
-Algunas señales de que una persona podría necesitar apoyo son:
+<nav class="tabs" role="tablist" aria-label="Secciones sobre salud mental">
+  <button class="tab" role="tab" id="tab-que-es" aria-controls="panel-que-es" aria-selected="true" data-target="panel-que-es">Qué es</button>
+  <button class="tab" role="tab" id="tab-adolescentes" aria-controls="panel-adolescentes" aria-selected="false" tabindex="-1" data-target="panel-adolescentes">Adolescentes</button>
+  <button class="tab" role="tab" id="tab-cuidado" aria-controls="panel-cuidado" aria-selected="false" tabindex="-1" data-target="panel-cuidado">Prendersi cura di sé</button>
+  <button class="tab" role="tab" id="tab-ayuda" aria-controls="panel-ayuda" aria-selected="false" tabindex="-1" data-target="panel-ayuda">Buscar apoyo</button>
+  <span class="tabs__indicator" aria-hidden="true"></span>
+</nav>
 
-Cambios importantes y persistentes en el estado de ánimo.
-Aislamiento de familiares o amigos.
-Dificultades para concentrarse o realizar actividades habituales.
-Problemas persistentes de sueño.
-Sentirse sobrepasado por las preocupaciones.
-Perder interés en actividades que antes disfrutaba.
+<main class="content">
 
-Una señal aislada no significa necesariamente que exista un problema de salud mental. Si estas situaciones son persistentes o interfieren con la vida cotidiana, es importante hablar con un adulto de confianza o con un profesional.</p>
-<h1>Come possiamo prenderci cura della nostra salute mentale?</h1>
-<p> Dormire bene: avere orari regolari per dormire aiuta a mantenere il benessere fisico ed emotivo.
+  <!-- Panel 1: Qué es la salud mental -->
+  <section class="panel" id="panel-que-es" role="tabpanel" aria-labelledby="tab-que-es" tabindex="0">
+    <p class="panel__lead">
+      La salud mental es un estado de bienestar que permite a las personas reconocer sus capacidades, afrontar los desafíos de la vida, aprender, trabajar y relacionarse con los demás.
+      No significa sentirse bien todo el tiempo. Todas las personas pueden experimentar emociones como tristeza, enojo, miedo, preocupación o estrés. Lo importante es poder reconocer estas emociones y contar con herramientas y apoyo para atravesarlas.
+    </p>
+    <p>
+      La salud mental es una parte fundamental de nuestro bienestar. Se relaciona con la manera en que pensamos, sentimos y actuamos, así como con nuestra capacidad para afrontar las dificultades, relacionarnos con otras personas y desarrollar nuestras actividades cotidianas.
+    </p>
 
-Mantenere relazioni positive: parlare con la famiglia, gli amici, gli insegnanti o altre persone di fiducia può aiutarci a sentirci ascoltati e accompagnati.
+    <div class="stat-row">
+      <div class="stat">
+        <p class="stat__number">1 de cada 8</p>
+        <p class="stat__label">personas en el mundo convive con una condición de salud mental, según la Organización Mundial de la Salud.</p>
+      </div>
+      <div class="stat">
+        <p class="stat__number">No es lineal</p>
+        <p class="stat__label">el bienestar cambia con el tiempo y las circunstancias; cuidarlo es un proceso, no un estado fijo.</p>
+      </div>
+    </div>
 
-Fare attività che ci piacciono: praticare uno sport, ascoltare musica, leggere, disegnare o trascorrere del tempo all'aria aperta può contribuire al nostro benessere.
+    <h2 class="panel__subhead">Los cuatro pilares del bienestar emocional</h2>
+    <ul class="pillar-list">
+      <li><strong>Cuerpo.</strong> El sueño, la alimentación y el movimiento inciden directamente en el estado de ánimo.</li>
+      <li><strong>Vínculos.</strong> Sentirse acompañado reduce el impacto del estrés y da sentido de pertenencia.</li>
+      <li><strong>Propósito.</strong> Tener actividades y metas propias sostiene la motivación diaria.</li>
+      <li><strong>Regulación.</strong> Poder nombrar y procesar lo que se siente, en vez de evitarlo.</li>
+    </ul>
+  </section>
 
-Organizzare le nostre responsabilità: dividere i compiti più grandi in obiettivi più piccoli può renderli più facili da affrontare.
+  <!-- Panel 2: Adolescentes -->
+  <section class="panel" id="panel-adolescentes" role="tabpanel" aria-labelledby="tab-adolescentes" tabindex="0" hidden>
+    <p class="panel__lead">
+      La adolescencia es una etapa de muchos cambios físicos, emocionales y sociales. Los estudios, las relaciones con amigos y familiares, las redes sociales y las expectativas sobre el futuro pueden generar diferentes emociones y preocupaciones.
+    </p>
 
-Esprimere le proprie emozioni: riconoscere ciò che proviamo e parlarne con qualcuno di fiducia è una parte importante della cura della salute mentale.
+    <div class="accordion">
+      <button class="accordion__trigger" aria-expanded="false" aria-controls="accordion-panel-signos">
+        <span>Señales de que una persona podría necesitar apoyo</span>
+        <span class="accordion__icon" aria-hidden="true"></span>
+      </button>
+      <div class="accordion__panel" id="accordion-panel-signos" hidden>
+        <ul class="signal-list">
+          <li>Cambios importantes y persistentes en el estado de ánimo.</li>
+          <li>Aislamiento de familiares o amigos.</li>
+          <li>Dificultades para concentrarse o realizar actividades habituales.</li>
+          <li>Problemas persistentes de sueño.</li>
+          <li>Sentirse sobrepasado por las preocupaciones.</li>
+          <li>Perder interés en actividades que antes disfrutaba.</li>
+        </ul>
+        <p class="panel__note">
+          Una señal aislada no significa necesariamente que exista un problema de salud mental. Si estas situaciones son persistentes o interfieren con la vida cotidiana, es importante hablar con un adulto de confianza o con un profesional.
+        </p>
+      </div>
+    </div>
 
-Chiedere aiuto: chiedere sostegno non è un segno di debolezza. È un modo responsabile per prendersi cura di sé e del proprio benessere.</p> 
+    <h2 class="panel__subhead">El rol de quienes acompañan</h2>
+    <p>
+      Familias, docentes y amigos no necesitan tener todas las respuestas. Escuchar sin juzgar, preguntar cómo está la persona sin presionarla a explicar todo, y sostener la conversación abierta en el tiempo suele ayudar más que buscar una solución inmediata.
+    </p>
+  </section>
+
+  <!-- Panel 3: Italiano — se mantiene sin modificar -->
+  <section class="panel" id="panel-cuidado" role="tabpanel" aria-labelledby="tab-cuidado" tabindex="0" hidden lang="it">
+    <h2 class="panel__subhead panel__subhead--first">Come possiamo prenderci cura della nostra salute mentale?</h2>
+    <ul class="care-list">
+      <li><strong>Dormire bene:</strong> avere orari regolari per dormire aiuta a mantenere il benessere fisico ed emotivo.</li>
+      <li><strong>Mantenere relazioni positive:</strong> parlare con la famiglia, gli amici, gli insegnanti o altre persone di fiducia può aiutarci a sentirci ascoltati e accompagnati.</li>
+      <li><strong>Fare attività che ci piacciono:</strong> praticare uno sport, ascoltare musica, leggere, disegnare o trascorrere del tempo all'aria aperta può contribuire al nostro benessere.</li>
+      <li><strong>Organizzare le nostre responsabilità:</strong> dividere i compiti più grandi in obiettivi più piccoli può renderli più facili da affrontare.</li>
+      <li><strong>Esprimere le proprie emozioni:</strong> riconoscere ciò che proviamo e parlarne con qualcuno di fiducia è una parte importante della cura della salute mentale.</li>
+      <li><strong>Chiedere aiuto:</strong> chiedere sostegno non è un segno di debolezza. È un modo responsabile per prendersi cura di sé e del proprio benessere.</li>
+    </ul>
+  </section>
+
+  <!-- Panel 4: Buscar apoyo -->
+  <section class="panel" id="panel-ayuda" role="tabpanel" aria-labelledby="tab-ayuda" tabindex="0" hidden>
+    <p class="panel__lead">
+      Pedir ayuda es un paso activo de cuidado, no una señal de debilidad. No hace falta esperar a estar en crisis para hablar con alguien.
+    </p>
+
+    <h2 class="panel__subhead">A quién recurrir</h2>
+    <ul class="pillar-list">
+      <li><strong>Un adulto o amigo de confianza.</strong> Contar lo que se siente, aunque sea de forma parcial, ya alivia.</li>
+      <li><strong>Un profesional de salud mental.</strong> Psicólogos, psiquiatras y equipos de salud pueden ofrecer herramientas y seguimiento.</li>
+      <li><strong>Líneas de escucha locales.</strong> Muchos países y ciudades cuentan con servicios telefónicos gratuitos y confidenciales; conviene tener a mano el de tu localidad.</li>
+    </ul>
+
+    <div class="cta-row">
+      <button class="btn btn--primary" id="btn-consejos">Ver consejos para empezar la conversación</button>
+      <button class="btn btn--ghost" id="btn-volver">Volver al inicio</button>
+    </div>
+
+    <div class="reveal" id="reveal-consejos" hidden>
+      <ul class="signal-list">
+        <li>Elegí un momento sin apuro ni distracciones.</li>
+        <li>Empezá por lo concreto: "últimamente me está costando..." es más fácil que "tengo un problema".</li>
+        <li>No hace falta tener claro qué se necesita antes de hablar; eso puede pensarse junto a la otra persona.</li>
+        <li>Si la primera conversación no alcanza, está bien intentarlo de nuevo o con otra persona.</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Contenido informativo y general. No reemplaza una consulta profesional.</p>
+</footer>
+
 <script src="script.js"></script>
 </body>
 </html>
