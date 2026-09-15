@@ -712,6 +712,10 @@ button {
 
 
 /* ---------- Reduced Motion ---------- */
+body {
+  background-color: #f4f7f3 !important;
+  color: #24332c !important;
+}
 
 @media (prefers-reduced-motion: reduce) {
 
